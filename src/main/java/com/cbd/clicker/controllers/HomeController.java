@@ -12,6 +12,6 @@ public class HomeController {
     @ResponseBody
     @GetMapping("/")
     public String home() {
-        return "simea to ja koks";
+        return "hello  word";
     }
 }
