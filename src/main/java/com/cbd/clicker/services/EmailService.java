@@ -16,12 +16,12 @@ import org.springframework.stereotype.Service;
             this.emailSender = emailSender;
         }
 
-        public void sendSimpleMessage() {
+        public void sendSimpleMessage(String to,String subject,String text) {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setFrom("marcinwypior7@gmail.com");
-            message.setTo("kwiatkowski11marek5@gmail.com");
-            message.setSubject("test maila");
-            message.setText("text wiadomości");
+            message.setFrom("clickercannabis@gmail.com");
+            message.setTo(to);
+            message.setSubject(subject);
+            message.setText(text);
             emailSender.send(message);
         }
     }
