@@ -39,7 +39,7 @@ public class UserController {
             userService.saveUser(user);
             emailService.sendSimpleMessage(user.getEmail(),"cannabis clicker aktywacja","witaj "+user.getUsername());
             model.addAttribute("message","link aktywacyjny wysłany na maila "+user.getEmail());
-            return "user/login";
+            return "home";
         }
     }
 

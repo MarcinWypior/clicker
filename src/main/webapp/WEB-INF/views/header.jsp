@@ -14,4 +14,9 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </form>
     </sec:authorize>
+
+    <sec:authorize access="isAnonymous()">
+            <a href="/login">Zaloguj się</a>
+            <a href="/registration">Zarejestruj się</a>
+        </sec:authorize>
 </header>

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/rest")
-public class RESTcontroller {
+public class    RESTcontroller {
     private UserRepository userRepository;
 
     public RESTcontroller(UserRepository userRepository) {

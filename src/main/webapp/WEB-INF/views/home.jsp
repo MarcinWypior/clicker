@@ -18,9 +18,6 @@
 
 
 
-<a href="/login">Zaloguj się</a>
-<a href="/registration">Zarejestruj się</a>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="<c:url value="resources/js/home.js"/>"></script>
 
