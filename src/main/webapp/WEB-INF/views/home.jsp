@@ -5,52 +5,21 @@
 <html>
 <head>
   <title>odpowiedz na pytanie</title>
-  <link rel="stylesheet" href="<c:url value="../../resources/css/home.css"/>"/>
+  <link rel="stylesheet" href="<c:url value="../../resources/css/style.css"/>"/>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <%--  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>--%>
 </head>
 <body>
-<table class="menu">
 
+<c:import url="header.jsp"/>
 
-  <th class="dropdown-menu">
-    <a href="/selectCategories">
-      graj
-    </a>
-  </th>
+<h1>Strona główna clickera</h1>
 
 
 
-  <th class="dropdown-menu">
-    <a href="/formQuestion">
-      dodaj swoje pytanie
-    </a>
-  </th>
-
-  <th class="dropdown-menu">
-    <a href="/formCategory">
-      dodaj kategorie
-    </a>
-  </th>
-
-  <th class="dropdown-menu">
-    <a href="/questionList">
-      dodaj swoje pytanie
-    </a>
-  </th>
-
-
-
-</table>
-
-<div class="container">
-  <h1 class="ml4">
-    <span class="letters letters-1">Quizz!</span>
-    <span class="letters letters-2">czy?</span>
-    <span class="letters letters-3">Wiesz?</span>
-  </h1>
-</div>
+<a href="/login">Zaloguj się</a>
+<a href="/registration">Zarejestruj się</a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="<c:url value="resources/js/home.js"/>"></script>

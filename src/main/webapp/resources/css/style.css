@@ -1,0 +1,13 @@
+.header{
+    height: 6%;
+    float: right;
+    display: block;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.form{
+    margin: auto;
+}
