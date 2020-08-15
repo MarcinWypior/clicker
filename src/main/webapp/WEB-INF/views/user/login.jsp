@@ -18,9 +18,11 @@
 <body>
 <c:import url="../header.jsp"/>
 
-    <c:if test="${not empty message}">
-        ${message}
-    </c:if>
+<c:if test="${param.error eq 'true'}">
+    <div class="error">
+        <c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}" />
+    </div>
+</c:if>
 
     <form method="post">
         <div><label> nazwa urzytkownika: <input type="text" name="username"/> </label></div>
